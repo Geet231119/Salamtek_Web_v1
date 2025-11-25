@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="none" name="TestSuite">
+	<listeners>
+        <listener class-name="Utils.TestListener"/>
+    </listeners>
+  <test name="Test">  
+    <classes>
+   	<class name="Tests.FindADoctorTest">
+   		<methods>
+   			<include name="BookingAppointment_Cash" />
+   			<include name="BookingAppointment_Wallet" />
+        	<include name="BookingAppointment_VISA" />
+        	<include name="BookingAppointment_KNET" />
+        	<include name="BookingAppointment_CANCELLATION" />
+        	<include name="BookingAppointment_VISA_CANCELLATION" />
+        	<include name="BookingAppointment_KNET_CANCELLATION" />
+        	<include name="BookingAppointment_Reschedule" />
+        	<include name="BookingAppointment_FromSymptom" />
+        	<include name="FindDoctor_FilterFromMainPage" />
+   		</methods>
+   	</class>
+   	<class name="Tests.HospitalsAndClinicsTest">
+     	<methods>
+        	<include name="HospitalsAndClinics_FilterFromMainPage" />
+        </methods>
+    </class>
+    <class name="Tests.BookMedicalServicesTest">
+     <methods>
+        	<include name="BookingMedicalAppointment_Profile_Cash" />
+        	<include name="BookingMedicalAppointment_Profile_Wallet" />
+        	<include name="BookingMedicalAppointment_Individual_Cash" />
+        	<include name="BookingMedicalAppointment_Individual_Wallet" />
+        	<include name="BookingMedicalAppointment_Profile_VISA" />
+        	<include name="BookingMedicalAppointment_Individual_VISA" />
+        	<include name="BookingMedicalAppointment_Profile_KNET" />
+        	<include name="BookingMedicalAppointment_Individual_KNET" />
+        	<include name="BookingMedicalAppointment_Profile_VISA_CANCELLATION" />
+        	<include name="BookingMedicalAppointment_Profile_KNET_CANCELLATION" />
+        	<include name="BookingMedicalAppointment_CANCELLATION" />
+        	<include name="BookingMedicalAppointment_Individual_VISA_CANCELLATION" />
+        	<include name="BookingMedicalAppointment_Individual_KNET_CANCELLATION" />
+        	<include name="BookingMedicalAppointment_Reschedule" />
+        	<include name="BookingMedicalAppointment_FilterFromMainPage" />
+        	<include name="BookingMedicalAppointment_FilterFromHomePage" />
+        	<include name="BookingMedicalAppointment_WalkIn" />
+      </methods>
+     </class>
+     <class name="Tests.ShopOnlineTest">
+     	<methods>
+     		<include name="ShopOnline_Pharmacy_CASH" />
+     		<include name="ShopOnline_Pharmacy_WALLET" />
+        	<include name="ShopOnline_Pharmacy_VISA" />
+        	<include name="ShopOnline_Pharmacy_KNET" />
+        	<include name="ShopOnline_Pharmacy_VISA_Cancellation" />
+        	<include name="ShopOnline_Pharmacy_KNET_Cancellation" />
+        	<include name="ShopOnline_Pharmacy_View_Track_Cancel" />
+        	<include name="ShopOnline_MedicalEquipment" />
+        	<include name="ShopOnline_Pharmacy_WALLET_Cancellation" />
+        	<include name="ShopOnline_PurchaseFromHome" />
+        	<include name="ShopOnline_PurchaseFromShopOnlineMain" />
+        	<include name="ShopOnline_FilterFromHome" />
+     	</methods>
+     </class>
+      <class name="Tests.DoctorCornerTest">
+     	<methods>
+     		<include name="DoctorCorner_DoctorShelves_FilterFromMainPage" />
+     		<include name="DoctorCorner_DoctorPicks_FilterFromHomeage" />
+     		<include name="DoctorCorner_ProductPurchase" />
+     	</methods>
+     </class>
+     <class name="Tests.OffersTest">
+     	<methods>
+     		<include name="Offer_MedicalService" />
+     		<include name="Offer_Category" />
+     		<include name="Offer_Search" />
+     	</methods>
+     </class>
+     <class name="Tests.AdminLabAppointmentTest">
+     	<methods>
+     		<include name="AdminLabAppointment_UploadResult_Complete" />
+        	<include name="AdminLabAppointment_Cancel_VISA" />
+        	<include name="AdminLabAppointment_Insurance" />
+        	<include name="AdminLabAppointment_Cancel_KNET" />
+        	<include name="AdminLabAppointment_CreateWalkIn" />
+        	<include name="AdminLabAppointment_CreateAppointment" />
+     	</methods>
+     </class>
+     <class name="Tests.AdminDoctorAppointmentTest">
+     	<methods>
+        	<include name="AdminDoctorAppointment_Start" />
+        	<include name="AdminDoctorAppointment_Reschedule" />
+        	<include name="AdminDoctorAppointment_UploadResult_Complete" />
+        	<include name="AdminDoctorAppointment_AddDiagnosticNotes" />
+        	<include name="AdminDoctorAppointment_Cancel_VISA" />
+        	<include name="AdminDoctorAppointment_Cancel_KNET" />
+        	<include name="AdminDoctorAppointment_FollowUpAppointment" />
+        	<include name="AdminDoctorAppointment_PrescribeMedicine" />
+        	<include name="AdminDoctorAppointment_ConductTest" />
+        	<include name="AdminDoctorAppointment_EHRPermissions" />
+        	<include name="AdminDoctorAppointment_REFERRAL_DOCTOR_To_LAB" />
+        	<include name="AdminDoctorAppointment_REFERRAL_SALAMTEK_To_LAB" />
+        	<include name="AdminDoctorAppointment_REFERRAL_DOCTOR_To_PHARMACY" />
+        	<include name="AdminDoctorAppointment_REFERRAL_SALAMTEK_To_PHARMACY" />
+        	<include name="AdminDoctorAppointment_REFERRAL_SALAMTEK_To_DOCTOR" />
+        	<include name="AdminDoctorAppointment_CashReceived" />
+      </methods>
+     </class>
+      <class name="Tests.AdminOrderTest">
+     	<methods>
+        	<include name="AdminOrder_StatusChange" />
+        	<include name="AdminOrder_Insurance" />
+        	<include name="AdminOrder_Insurance_DocumentsVerification" />
+        	<include name="AdminOrder_Cancel" />
+        	<include name="AdminOrder_AddItem" />
+        	<include name="AdminOrder_Cancel_Promotion" />
+        	<include name="AdminOrder_CashReceived" />
+        	<include name="AdminOrder_PaymentInfo" />
+        	<include name="AdminOrder_OrderSummary" />
+        </methods>
+     </class>
+      <class name="Tests.AdminTest">
+     	<methods>
+        	<include name="Admin_Report_AccountStatement" />
+        	<include name="Admin_BookWithPromotion_Doctor" />
+        	<include name="Admin_BookWithPromotion_Lab" />
+        	<include name="Admin_CreatePromotion_Lab" />
+        	<include name="Admin_CreatePromotion_Pharmacy" />
+        	<include name="Admin_OrderWithPromotion_Pharmacy" />
+        	<include name="Admin_OriginalAndDiscountAmount_Lab" />
+        	<include name="Admin_CreatePromotion_Doctor" />
+        	<include name="Admin_OriginalAndDiscountAmount_Pharmacy" />
+        	<include name="Admin_AddWalletMoney" />
+        	<include name="Admin_Promo_Cancel_Lab" />
+        	<include name="Admin_PromoNotApplied_Lab" />
+        	<include name="Admin_OrderWithPromotion_Brand" />
+        	<include name="Admin_OriginalAndDiscountAmount_Lab_MultiService" />
+        	<include name="Admin_CreateVoucher" />
+        	<include name="Admin_CreatePromotion_Brand" />
+        </methods>
+     </class>
+     <class name="Tests.UploadPrescriptionTest">
+     	<methods>
+        	<include name="UploadPrescription" />
+        </methods>
+    </class>
+      <class name="Tests.SearchTest">
+     	<methods>
+        	<include name="Search" />
+        	<include name="Search_BookMedicalService" />
+        	<include name="Search_PurchaseProduct" />
+        	<include name="Search_BookDoctorAppointment_HospitalsAndClinic" />
+        	<include name="SearchError" />
+        </methods>
+     </class>
+      <class name="Tests.MyAccountTest">
+     	<methods>
+        	<include name="appointment" />
+        	<include name="favorites" />
+        	<include name="ePrescription" />
+        	<include name="profile" />
+        </methods>
+     </class>
+    </classes>
+   </test> <!-- Test -->
+</suite> <!-- Suite -->
