@@ -1,3 +1,6 @@
 [INFO ] 2025-11-26 13:40:02.445 [main] Log - I am in onStart method Test
 [INFO ] 2025-11-26 13:41:56.401 [main] Log - Admin_CreatePromotion_Brand test is succeed.
 [INFO ] 2025-11-26 13:41:57.106 [main] Log - I am in onFinish method Test
+[INFO ] 2025-11-26 13:46:32.225 [main] Log - I am in onStart method Test
+[INFO ] 2025-11-26 13:48:45.099 [main] Log - Admin_CreatePromotion_Brand test is succeed.
+[INFO ] 2025-11-26 13:48:45.777 [main] Log - I am in onFinish method Test
