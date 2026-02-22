@@ -56,6 +56,7 @@ public class AdminProfilePromotionPage extends BaseTest {
 	By brandTxt = By.xpath(
 			"//app-promotion-create-update/nb-card/nb-card-body/form/div[5]/div[4]/div/ng-select/div/div/div[2]/input");
 
+	By maxDiscAmtLbl = By.xpath("//label[contains(text(),'Max Discount Amount')]");
 	By applyOnOfferCheck =By.xpath("//label/span[contains(text(),' Apply On Discounted Items')]/preceding-sibling::span");
 	public AdminProfilePromotionPage(WebDriver driver) {
 		super();
@@ -221,7 +222,7 @@ public class AdminProfilePromotionPage extends BaseTest {
 		driver.findElement(pharmacyTxt).sendKeys(Keys.DOWN);
 		driver.findElement(pharmacyTxt).sendKeys(Keys.RETURN);
 		waitASecond();
-		moveToElement(driver.findElement(selectedProductTxt));
+		moveToElement(driver.findElement(maxDiscAmtLbl));
 		driver.findElement(selectedProductTxt).sendKeys(selectedProduct);
 		waitASecond();
 		driver.findElement(selectedProductTxt).sendKeys(Keys.DOWN);

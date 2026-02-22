@@ -12,6 +12,7 @@ public class HospitalsAndClinicsMainPage extends BaseTest{
 	By clinicsLnk = By.id("CLINICS-tab");
 	By showMeTheFullClinicsListBtn = By.xpath("//app-hospital-home/div[1]/div[2]/div/div/div/div/div/div[4]/div/div/div/div/button[contains(text(),'SHOW ME THE FULL CLINICS LIST')]");
 	By findADoctorWithinHeader = By.xpath("//app-clinic-listing/section/div/div/div[3]/div/div[3]/div[3]/div/div/div[1]/h2[contains(text(),'DOCTOR WITHIN')]");
+	By mostSearchedHeader = By.xpath("//app-hospital-home/div[1]/div[2]/span/div[1]/div[1]/h2[contains(text(),'SEARCHED')]");
 	
 	//Elements in Filter
 	By manufacturesSearchTxt = By.xpath("//app-product-listing/section/div/div[2]/div/div[3]/div/div[1]/div[2]/div[2]/div[4]/div/div/div/div/div[1]/input");
@@ -30,8 +31,8 @@ public class HospitalsAndClinicsMainPage extends BaseTest{
 		if(serviceProviderType.equalsIgnoreCase("Clinic")) {
 			moveToElement(driver.findElement(clinicsLnk));
 			explicitWait(clinicsLnk);
-			driver.findElement(clinicsLnk).click();
-			moveToElement(driver.findElement(showMeTheFullClinicsListBtn));
+			//driver.findElement(clinicsLnk).click();
+			moveToElement(driver.findElement(mostSearchedHeader));
 			driver.findElement(showMeTheFullClinicsListBtn).click();
 		}
 		explicitWait_60(findADoctorWithinHeader);

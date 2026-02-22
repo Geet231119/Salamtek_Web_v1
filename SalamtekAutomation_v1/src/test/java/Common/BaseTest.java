@@ -212,7 +212,8 @@ public class BaseTest {
 	public void uploadPDF() {
 		try {
 			System.out.println(path + "\\Files\\FileUpload.exe");
-			Runtime.getRuntime().exec(path + "\\Files\\FileUpload.exe");
+			String filePath = path + "\\Files\\sample.pdf";
+			Runtime.getRuntime().exec(path + "\\Files\\FileUpload.exe"+" "+filePath);
 			System.out.println("File is Uploaded Successfully");
 		} catch (IOException e) {
 			e.printStackTrace();

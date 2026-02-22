@@ -8,8 +8,8 @@
     <classes>
       <class name="Tests.AdminTest">
         <methods>
+          <include name="Admin_OrderFromAbandonedCart_Pharmacy" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="Admin_CreatePromotion_Brand" invocation-numbers="0"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Tests.AdminTest -->

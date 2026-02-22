@@ -12,6 +12,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WindowType;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -93,7 +94,7 @@ public class AdminTest extends BaseTest {
 			String profileIndividualServiceSelection, String profileIndividualTestSelection,
 			String profileIndividualTestSelection1, String pharmacy, String selectedProduct, String brand,
 			String colorPresent, String uploadNeeded, String walletRechargeAmount, String expectedError,
-			String voucherAmount, String validity, String applyOnOffer) throws Exception {
+			String voucherAmount, String validity, String applyOnOffer, String orderPlacedBy, String title, String message) throws Exception {
 		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("actualOriginalAmount");
@@ -105,6 +106,7 @@ public class AdminTest extends BaseTest {
 		excelUtils.updateField("lastWalletValue");
 		excelUtils.updateField("refundAmount");
 		excelUtils.updateField("actualError");
+		excelUtils.updateField("notification");
 		excelUtils.updateField("bookingID");
 		excelUtils.updateField("orderID");
 		excelUtils.updateField("Status");
@@ -157,7 +159,7 @@ public class AdminTest extends BaseTest {
 			String profileIndividualServiceSelection, String profileIndividualTestSelection,
 			String profileIndividualTestSelection1, String pharmacy, String selectedProduct, String brand,
 			String colorPresent, String uploadNeeded, String walletRechargeAmount, String expectedError,
-			String voucherAmount, String validity, String applyOnOffer) throws Exception {
+			String voucherAmount, String validity, String applyOnOffer, String orderPlacedBy, String title, String message) throws Exception {
 		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("actualOriginalAmount");
@@ -169,6 +171,7 @@ public class AdminTest extends BaseTest {
 		excelUtils.updateField("lastWalletValue");
 		excelUtils.updateField("refundAmount");
 		excelUtils.updateField("actualError");
+		excelUtils.updateField("notification");
 		excelUtils.updateField("bookingID");
 		excelUtils.updateField("orderID");
 		excelUtils.updateField("Status");
@@ -300,7 +303,7 @@ public class AdminTest extends BaseTest {
 			String profileIndividualServiceSelection, String profileIndividualTestSelection,
 			String profileIndividualTestSelection1, String pharmacy, String selectedProduct, String brand,
 			String colorPresent, String uploadNeeded, String walletRechargeAmount, String expectedError,
-			String voucherAmount, String validity, String applyOnOffer) throws Exception {
+			String voucherAmount, String validity, String applyOnOffer, String orderPlacedBy, String title, String message) throws Exception {
 		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("actualOriginalAmount");
@@ -312,6 +315,7 @@ public class AdminTest extends BaseTest {
 		excelUtils.updateField("lastWalletValue");
 		excelUtils.updateField("refundAmount");
 		excelUtils.updateField("actualError");
+		excelUtils.updateField("notification");
 		excelUtils.updateField("bookingID");
 		excelUtils.updateField("orderID");
 		excelUtils.updateField("Status");
@@ -365,7 +369,7 @@ public class AdminTest extends BaseTest {
 			String profileIndividualServiceSelection, String profileIndividualTestSelection,
 			String profileIndividualTestSelection1, String pharmacy, String selectedProduct, String brand,
 			String colorPresent, String uploadNeeded, String walletRechargeAmount, String expectedError,
-			String voucherAmount, String validity, String applyOnOffer) throws Exception {
+			String voucherAmount, String validity, String applyOnOffer, String orderPlacedBy, String title, String message) throws Exception {
 		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("actualOriginalAmount");
@@ -377,6 +381,7 @@ public class AdminTest extends BaseTest {
 		excelUtils.updateField("lastWalletValue");
 		excelUtils.updateField("refundAmount");
 		excelUtils.updateField("actualError");
+		excelUtils.updateField("notification");
 		excelUtils.updateField("bookingID");
 		excelUtils.updateField("orderID");
 		excelUtils.updateField("Status");
@@ -523,7 +528,7 @@ public class AdminTest extends BaseTest {
 			String profileIndividualServiceSelection, String profileIndividualTestSelection,
 			String profileIndividualTestSelection1, String pharmacy, String selectedProduct, String brand,
 			String colorPresent, String uploadNeeded, String walletRechargeAmount, String expectedError,
-			String voucherAmount, String validity, String applyOnOffer) throws Exception {
+			String voucherAmount, String validity, String applyOnOffer, String orderPlacedBy, String title, String message) throws Exception {
 		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("actualOriginalAmount");
@@ -535,6 +540,7 @@ public class AdminTest extends BaseTest {
 		excelUtils.updateField("lastWalletValue");
 		excelUtils.updateField("refundAmount");
 		excelUtils.updateField("actualError");
+		excelUtils.updateField("notification");
 		excelUtils.updateField("bookingID");
 		excelUtils.updateField("orderID");
 		excelUtils.updateField("Status");
@@ -589,7 +595,7 @@ public class AdminTest extends BaseTest {
 			String profileIndividualServiceSelection, String profileIndividualTestSelection,
 			String profileIndividualTestSelection1, String pharmacy, String selectedProduct, String brand,
 			String colorPresent, String uploadNeeded, String walletRechargeAmount, String expectedError,
-			String voucherAmount, String validity, String applyOnOffer) throws Exception {
+			String voucherAmount, String validity, String applyOnOffer, String orderPlacedBy, String title, String message) throws Exception {
 		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("actualOriginalAmount");
@@ -601,6 +607,7 @@ public class AdminTest extends BaseTest {
 		excelUtils.updateField("lastWalletValue");
 		excelUtils.updateField("refundAmount");
 		excelUtils.updateField("actualError");
+		excelUtils.updateField("notification");
 		excelUtils.updateField("bookingID");
 		excelUtils.updateField("orderID");
 		excelUtils.updateField("Status");
@@ -655,7 +662,7 @@ public class AdminTest extends BaseTest {
 			String profileIndividualServiceSelection, String profileIndividualTestSelection,
 			String profileIndividualTestSelection1, String pharmacy, String selectedProduct, String brand,
 			String colorPresent, String uploadNeeded, String walletRechargeAmount, String expectedError,
-			String voucherAmount, String validity, String applyOnOffer) throws Exception {
+			String voucherAmount, String validity, String applyOnOffer, String orderPlacedBy, String title, String message) throws Exception {
 		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("actualOriginalAmount");
@@ -667,6 +674,7 @@ public class AdminTest extends BaseTest {
 		excelUtils.updateField("lastWalletValue");
 		excelUtils.updateField("refundAmount");
 		excelUtils.updateField("actualError");
+		excelUtils.updateField("notification");
 		excelUtils.updateField("bookingID");
 		excelUtils.updateField("orderID");
 		excelUtils.updateField("Status");
@@ -810,7 +818,7 @@ public class AdminTest extends BaseTest {
 			String profileIndividualServiceSelection, String profileIndividualTestSelection,
 			String profileIndividualTestSelection1, String pharmacy, String selectedProduct, String brand,
 			String colorPresent, String uploadNeeded, String walletRechargeAmount, String expectedError,
-			String voucherAmount, String validity, String applyOnOffer) throws Exception {
+			String voucherAmount, String validity, String applyOnOffer, String orderPlacedBy, String title, String message) throws Exception {
 		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("actualOriginalAmount");
@@ -822,6 +830,7 @@ public class AdminTest extends BaseTest {
 		excelUtils.updateField("lastWalletValue");
 		excelUtils.updateField("refundAmount");
 		excelUtils.updateField("actualError");
+		excelUtils.updateField("notification");
 		excelUtils.updateField("bookingID");
 		excelUtils.updateField("orderID");
 		excelUtils.updateField("Status");
@@ -972,7 +981,7 @@ public class AdminTest extends BaseTest {
 			String profileIndividualServiceSelection, String profileIndividualTestSelection,
 			String profileIndividualTestSelection1, String pharmacy, String selectedProduct, String brand,
 			String colorPresent, String uploadNeeded, String walletRechargeAmount, String expectedError,
-			String voucherAmount, String validity, String applyOnOffer) throws Exception {
+			String voucherAmount, String validity, String applyOnOffer, String orderPlacedBy, String title, String message) throws Exception {
 		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("actualOriginalAmount");
@@ -984,6 +993,7 @@ public class AdminTest extends BaseTest {
 		excelUtils.updateField("lastWalletValue");
 		excelUtils.updateField("refundAmount");
 		excelUtils.updateField("actualError");
+		excelUtils.updateField("notification");
 		excelUtils.updateField("bookingID");
 		excelUtils.updateField("orderID");
 		excelUtils.updateField("Status");
@@ -1141,7 +1151,7 @@ public class AdminTest extends BaseTest {
 			String profileIndividualServiceSelection, String profileIndividualTestSelection,
 			String profileIndividualTestSelection1, String pharmacy, String selectedProduct, String brand,
 			String colorPresent, String uploadNeeded, String walletRechargeAmount, String expectedError,
-			String voucherAmount, String validity, String applyOnOffer) throws Exception {
+			String voucherAmount, String validity, String applyOnOffer, String orderPlacedBy, String title, String message) throws Exception {
 		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("actualOriginalAmount");
@@ -1153,6 +1163,7 @@ public class AdminTest extends BaseTest {
 		excelUtils.updateField("lastWalletValue");
 		excelUtils.updateField("refundAmount");
 		excelUtils.updateField("actualError");
+		excelUtils.updateField("notification");
 		excelUtils.updateField("bookingID");
 		excelUtils.updateField("orderID");
 		excelUtils.updateField("Status");
@@ -1300,7 +1311,7 @@ public class AdminTest extends BaseTest {
 			String profileIndividualServiceSelection, String profileIndividualTestSelection,
 			String profileIndividualTestSelection1, String pharmacy, String selectedProduct, String brand,
 			String colorPresent, String uploadNeeded, String walletRechargeAmount, String expectedError,
-			String voucherAmount, String validity, String applyOnOffer) throws Exception {
+			String voucherAmount, String validity, String applyOnOffer, String orderPlacedBy, String title, String message) throws Exception {
 		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("actualOriginalAmount");
@@ -1312,6 +1323,7 @@ public class AdminTest extends BaseTest {
 		excelUtils.updateField("lastWalletValue");
 		excelUtils.updateField("refundAmount");
 		excelUtils.updateField("actualError");
+		excelUtils.updateField("notification");
 		excelUtils.updateField("bookingID");
 		excelUtils.updateField("orderID");
 		excelUtils.updateField("Status");
@@ -1369,7 +1381,7 @@ public class AdminTest extends BaseTest {
 			String profileIndividualServiceSelection, String profileIndividualTestSelection,
 			String profileIndividualTestSelection1, String pharmacy, String selectedProduct, String brand,
 			String colorPresent, String uploadNeeded, String walletRechargeAmount, String expectedError,
-			String voucherAmount, String validity, String applyOnOffer) throws Exception {
+			String voucherAmount, String validity, String applyOnOffer, String orderPlacedBy, String title, String message) throws Exception {
 		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("actualOriginalAmount");
@@ -1381,6 +1393,7 @@ public class AdminTest extends BaseTest {
 		excelUtils.updateField("lastWalletValue");
 		excelUtils.updateField("refundAmount");
 		excelUtils.updateField("actualError");
+		excelUtils.updateField("notification");
 		excelUtils.updateField("bookingID");
 		excelUtils.updateField("orderID");
 		excelUtils.updateField("Status");
@@ -1569,7 +1582,7 @@ public class AdminTest extends BaseTest {
 			String profileIndividualServiceSelection, String profileIndividualTestSelection,
 			String profileIndividualTestSelection1, String pharmacy, String selectedProduct, String brand,
 			String colorPresent, String uploadNeeded, String walletRechargeAmount, String expectedError,
-			String voucherAmount, String validity, String applyOnOffer) throws Exception {
+			String voucherAmount, String validity, String applyOnOffer, String orderPlacedBy, String title, String message) throws Exception {
 		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("actualOriginalAmount");
@@ -1581,6 +1594,7 @@ public class AdminTest extends BaseTest {
 		excelUtils.updateField("lastWalletValue");
 		excelUtils.updateField("refundAmount");
 		excelUtils.updateField("actualError");
+		excelUtils.updateField("notification");
 		excelUtils.updateField("bookingID");
 		excelUtils.updateField("orderID");
 		excelUtils.updateField("Status");
@@ -1697,7 +1711,7 @@ public class AdminTest extends BaseTest {
 			String profileIndividualServiceSelection, String profileIndividualTestSelection,
 			String profileIndividualTestSelection1, String pharmacy, String selectedProduct, String brand,
 			String colorPresent, String uploadNeeded, String walletRechargeAmount, String expectedError,
-			String voucherAmount, String validity, String applyOnOffer) throws Exception {
+			String voucherAmount, String validity, String applyOnOffer, String orderPlacedBy, String title, String message) throws Exception {
 		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("actualOriginalAmount");
@@ -1709,6 +1723,7 @@ public class AdminTest extends BaseTest {
 		excelUtils.updateField("lastWalletValue");
 		excelUtils.updateField("refundAmount");
 		excelUtils.updateField("actualError");
+		excelUtils.updateField("notification");
 		excelUtils.updateField("bookingID");
 		excelUtils.updateField("orderID");
 		excelUtils.updateField("Status");
@@ -1761,7 +1776,7 @@ public class AdminTest extends BaseTest {
 			String profileIndividualServiceSelection, String profileIndividualTestSelection,
 			String profileIndividualTestSelection1, String pharmacy, String selectedProduct, String brand,
 			String colorPresent, String uploadNeeded, String walletRechargeAmount, String expectedError,
-			String voucherAmount, String validity, String applyOnOffer) throws Exception {
+			String voucherAmount, String validity, String applyOnOffer, String orderPlacedBy, String title, String message) throws Exception {
 		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("actualOriginalAmount");
@@ -1773,6 +1788,7 @@ public class AdminTest extends BaseTest {
 		excelUtils.updateField("lastWalletValue");
 		excelUtils.updateField("refundAmount");
 		excelUtils.updateField("actualError");
+		excelUtils.updateField("notification");
 		excelUtils.updateField("bookingID");
 		excelUtils.updateField("orderID");
 		excelUtils.updateField("Status");
@@ -1921,7 +1937,7 @@ public class AdminTest extends BaseTest {
 			String profileIndividualServiceSelection, String profileIndividualTestSelection,
 			String profileIndividualTestSelection1, String pharmacy, String selectedProduct, String brand,
 			String colorPresent, String uploadNeeded, String walletRechargeAmount, String expectedError,
-			String voucherAmount, String validity, String applyOnOffer) throws Exception {
+			String voucherAmount, String validity, String applyOnOffer, String orderPlacedBy, String title, String message) throws Exception {
 		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("actualOriginalAmount");
@@ -1933,6 +1949,7 @@ public class AdminTest extends BaseTest {
 		excelUtils.updateField("lastWalletValue");
 		excelUtils.updateField("refundAmount");
 		excelUtils.updateField("actualError");
+		excelUtils.updateField("notification");
 		excelUtils.updateField("bookingID");
 		excelUtils.updateField("orderID");
 		excelUtils.updateField("Status");
@@ -2006,6 +2023,158 @@ public class AdminTest extends BaseTest {
 		}
 	}
 
+	@Test(description = "Verify whether user receives the push notification from abandoned cart, navigated to his cart while clicking the notification and purchase the order", groups = {
+			"Admin" }, dataProvider = "dataForAdmin")
+	public void Admin_OrderFromAbandonedCart_Pharmacy(String testCaseID, String testCaseName, String description,
+			String executionStatus, String username, String password, String operationName, String paymentMode,
+			String payOnlyBookingFee, String bankName, String firstName, String lastName, String address, String city,
+			String country, String cardNumber, String cardExpiryMonth, String cardExpiryYear, String cardHolderName,
+			String CVV, String pin, String adminURL, String adminUsername, String adminPassword,
+			String selectionOperationFromLeftPanel, String requiredAppointment, String requiredStatus,
+			String titleEnglish, String titleArabic, String code, String userPerCoupon, String numberOfCoupons,
+			String discountType, String discount, String promoFor, String doctorSearchName, String doctorName,
+			String serviceName, String medicalServiceSearchName, String medicalServiceName,
+			String profileIndividualServiceSelection, String profileIndividualTestSelection,
+			String profileIndividualTestSelection1, String pharmacy, String selectedProduct, String brand,
+			String colorPresent, String uploadNeeded, String walletRechargeAmount, String expectedError,
+			String voucherAmount, String validity, String applyOnOffer, String orderPlacedBy, String title, String message) throws Exception {
+		ExtentTestManager.startTest(testCaseID + "_" + description, description);
+		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
+		excelUtils.updateField("actualOriginalAmount");
+		excelUtils.updateField("actualDiscountedAmount");
+		excelUtils.updateField("actualDiscount");
+		excelUtils.updateField("expectedPromoCode");
+		excelUtils.updateField("expectedVoucherCode");
+		excelUtils.updateField("firstWalletValue");
+		excelUtils.updateField("lastWalletValue");
+		excelUtils.updateField("refundAmount");
+		excelUtils.updateField("actualError");
+		excelUtils.updateField("notification");
+		excelUtils.updateField("bookingID");
+		excelUtils.updateField("orderID");
+		excelUtils.updateField("Status");
+		excelUtils.updateField("ErrorMessage");
+		testResult = loginPage.verifyLogin(username, password);
+		if (testResult.equals(false)) {
+			logoutPage.verifyLogout();
+			excelUtils.updateResult(testResult);
+			Assert.assertEquals(testResult, true);
+		}
+		testResult = homePage.selectOperation(operationName);
+		if (testResult.equals(false)) {
+			logoutPage.verifyLogout();
+			excelUtils.updateResult(testResult);
+			Assert.assertEquals(testResult, true);
+		}
+		testResult = homePage.selectPharmacy(pharmacy, pharmacy);
+		if (testResult.equals(false)) {
+			logoutPage.verifyLogout();
+			excelUtils.updateResult(testResult);
+			Assert.assertEquals(testResult, true);
+		}
+		testResult = shopOnlineMainPage.selectProduct(selectedProduct);
+		if (testResult.equals(false)) {
+			logoutPage.verifyLogout();
+			excelUtils.updateResult(testResult);
+			Assert.assertEquals(testResult, true);
+		}
+		testResult = shopOnlineDetailsPage.addProductToCart(selectedProduct, colorPresent);
+		if (testResult.equals(false)) {
+			logoutPage.verifyLogout();
+			excelUtils.updateResult(testResult);
+			Assert.assertEquals(testResult, true);
+		}
+		String currentHandle = driver.getWindowHandle();
+		driver.switchTo().newWindow(WindowType.TAB);
+		Set<String> handles = driver.getWindowHandles();
+		for (String actual : handles) {
+			if (!actual.equalsIgnoreCase(currentHandle)) {
+				driver.switchTo().window(actual);
+				driver.get(adminURL);
+			}
+		}
+		testResult = adminProfileLoginPage.verifyAdminLogin(adminUsername, adminPassword);
+		if (testResult.equals(false)) {
+			adminProfileLogoutPage.verifyLogout();
+			excelUtils.updateResult(testResult);
+			Assert.assertEquals(testResult, true);
+		}
+		testResult = adminProfileHomePage.selectOperationFromLeftPanel(selectionOperationFromLeftPanel);
+		if (testResult.equals(false)) {
+			adminProfileLogoutPage.verifyLogout();
+			excelUtils.updateResult(testResult);
+			Assert.assertEquals(testResult, true);
+		}
+		testResult = adminProfileHomePage.selectSuboperationFromLeftPanel(requiredAppointment);
+		if (testResult.equals(false)) {
+			adminProfileLogoutPage.verifyLogout();
+			excelUtils.updateResult(testResult);
+			Assert.assertEquals(testResult, true);
+		}
+		testResult = adminOrderPage.verifyAbandonedOrder(pharmacy, orderPlacedBy, title, message, testCaseID, sheetName);
+		if (testResult.equals(false)) {
+			adminProfileLogoutPage.verifyLogout();
+			excelUtils.updateResult(testResult);
+			Assert.assertEquals(testResult, true);
+		}
+		testResult = adminProfileLogoutPage.verifyLogout();
+		if (testResult.equals(false)) {
+			adminProfileLogoutPage.verifyLogout();
+			excelUtils.updateResult(testResult);
+			Assert.assertEquals(testResult, true);
+		}
+		driver.close();
+		driver.switchTo().window(currentHandle);
+		driver.navigate().refresh();
+		String notification = notificationListPage.verifyNotificationPresenceForCartReminder(testCaseID, sheetName);
+		testResult = cartDetailsPage.verifyProceedCheckout(uploadNeeded);
+		if (testResult.equals(false)) {
+			logoutPage.verifyLogout();
+			excelUtils.updateResult(testResult);
+			assertEquals(testResult, true);
+		}
+		testResult = checkoutPage.selectPaymentAndProceed(paymentMode, payOnlyBookingFee);
+		if (testResult.equals(false)) {
+			logoutPage.verifyLogout();
+			excelUtils.updateResult(testResult);
+		}
+		if (paymentMode.equalsIgnoreCase("KNET")) {
+			testResult = checkoutPage.enterKNETDetails(bankName, cardNumber, cardExpiryMonth, cardExpiryYear, pin);
+			if (testResult.equals(false)) {
+				excelUtils.updateResult(false);
+				excelUtils.updateValueToExcel("ErrorMessage", "KNET Payment Failed.");
+				setUp();
+				assertEquals(testResult, true);
+			}
+		} else if (paymentMode.equalsIgnoreCase("VISA")) {
+			testResult = checkoutPage.enterVISADetails(firstName, lastName, address, city, country, cardNumber,
+					cardExpiryMonth, cardExpiryYear, cardHolderName, CVV, username);
+			if (testResult.equals(false)) {
+				excelUtils.updateResult(false);
+				excelUtils.updateValueToExcel("ErrorMessage",
+						"Visa Payment Failed. Your order was declined. Please verify your information.");
+				setUp();
+				assertEquals(testResult, true);
+			}
+		}
+		testResult = checkoutPage.verifyBookingSuccess();
+		if (testResult.equals(false)) {
+			logoutPage.verifyLogout();
+			excelUtils.updateResult(testResult);
+		}
+		takeScreenShot(getDriver(), "OrderPlacedSuccess", testCaseID, sheetName);
+		String orderID = checkoutPage.getBookingID();
+		testResult = logoutPage.verifyLogout();
+		if (testResult.equals(true)) {
+			excelUtils.updateResult(testResult);
+			excelUtils.updateValueToExcel("orderID", orderID);
+			excelUtils.updateValueToExcel("notification", notification);
+		} else {
+			adminProfileLogoutPage.verifyLogout();
+			excelUtils.updateResult(testResult);
+		}
+	}
+
 	@DataProvider(name = "dataForAdmin")
 	public Object[][] getData(Method m) throws IOException {
 		int countIteration = 0, cnt = 0;
@@ -2030,12 +2199,12 @@ public class AdminTest extends BaseTest {
 				countIteration = countIteration + 1;
 			}
 		}
-		Object[][] data = new Object[countIteration][ColNum - 13];
+		Object[][] data = new Object[countIteration][ColNum - 14];
 		for (int i1 = 1; i1 < lastRow; i1++) {
 			String executionStatus1 = sheet.getRow(i1).getCell(3).getStringCellValue();
 			String testCaseName1 = sheet.getRow(i1).getCell(1).getStringCellValue();
 			if (executionStatus1.equalsIgnoreCase("Y") && testCaseName1.equalsIgnoreCase(m.getName())) {
-				for (int j = 0; j < ColNum - 13; j++) {
+				for (int j = 0; j < ColNum - 14; j++) {
 					cell = sheet.getRow(i1).getCell(j);
 					if (cell == null)
 						data[cnt][j] = "";

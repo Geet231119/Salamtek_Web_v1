@@ -28,6 +28,9 @@ public class AdminProfileHomePage extends BaseTest{
 	By voucherSection = By.xpath("//span[contains(text(),'Vouchers')]");
 	By usersSection = By.xpath("//nb-sidebar/div/div/nb-menu/ul/li[14]/a/span[contains(text(),'Users')]");
 	By customerSection = By.xpath("//nb-sidebar/div/div/nb-menu/ul/li[14]/ul/li[1]/a/span[contains(text(),'Customers')]");
+	By homeServiceSection = By.xpath("//nb-sidebar/div/div/nb-menu/ul/li[15]/ul/li[5]/a/span[contains(text(),'Home Service Requests')]");
+	By abandonedCartSection = By.xpath("//nb-sidebar/div/div/nb-menu/ul/li[3]/ul/li[14]/a/span[contains(text(),'Abandoned Cart')]");
+	
 	
 	public AdminProfileHomePage(WebDriver driver) 
 	{
@@ -126,6 +129,12 @@ public class AdminProfileHomePage extends BaseTest{
 			break;
 		case "customers":
 			driver.findElement(customerSection).click();
+			break;
+		case "homeServiceRequest":
+			driver.findElement(homeServiceSection).click();
+			break;
+		case "abandonedCart":
+			driver.findElement(abandonedCartSection).click();
 			break;
 		}
 		return true;

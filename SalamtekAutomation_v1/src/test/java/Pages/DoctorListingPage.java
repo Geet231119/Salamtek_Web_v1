@@ -139,6 +139,9 @@ public class DoctorListingPage extends BaseTest {
 		if (filterType.equalsIgnoreCase("Price")) {
 			int counter = 0;
 			for (int i = 1; i <= 5; i++) {
+				moveToElement(driver
+								.findElement(By.xpath("//app-doctor/div/div[" + i
+										+ "]/div/div/div[4]/div/div/div[3]/div/div[1]/button/span[2]")));
 				Double actualPrice = Double
 						.parseDouble(driver
 								.findElement(By.xpath("//app-doctor/div/div[" + i

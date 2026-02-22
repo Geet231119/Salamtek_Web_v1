@@ -67,7 +67,7 @@ public class CheckoutPage extends BaseTest {
 	By doctorGrandTotalLbl = By.xpath(
 			"//app-booking-confirmation/div/app-doctors-booking/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div[1]/ul/li[2]");
 	By doctorBookingFeeLbl = By
-			.xpath("//app-doctors-booking/div/div/div[2]/div[2]/div[1]/div/div/div[2]/div[7]/ul/li[2]");
+			.xpath("//app-doctors-booking/div/div/div[2]/div[2]/div[1]/div/div/div[2]/div[8]/ul/li[2]");
 	By shopOnlineTotalPrice = By.xpath("//li[contains(text(),'Grand Total')]/following-sibling::li/span");
 	By shopOnlineSubTotalPrice = By.xpath("//li[contains(text(),'Subtotal')]/following-sibling::li/span");
 	By shopOnlineDeliveryFee = By.xpath("//li[contains(text(),'Delivery Fee')]/following-sibling::li/span");

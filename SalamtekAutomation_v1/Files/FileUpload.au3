@@ -1,3 +1,5 @@
 ControlFocus("Open","","Edit1")
-ControlSetText("Open","","Edit1","C:\Users\g.barried\eclipse-workspace\SalamtekAutomation_v1\Files\sample.pdf")
+
+ControlSetText("Open","","Edit1",$CmdLine[1])
+
 ControlClick("Open","","Button1")

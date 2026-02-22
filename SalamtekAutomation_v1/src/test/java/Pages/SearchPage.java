@@ -367,6 +367,7 @@ public class SearchPage extends BaseTest {
 								"//app-search-result/section/div/div/div[5]/div/div/app-clinic-single/span/div/div/div[5]/h3"))
 								.getText().trim().equalsIgnoreCase(searchValue)) {
 					status = true;
+					moveToElement(driver.findElement(By.xpath("//app-search-result/section/div/div/div[5]/div/div/app-clinic-single/span/div/div/div[6]/button")));
 					driver.findElement(By.xpath("//app-search-result/section/div/div/div[5]/div/div/app-clinic-single/span/div/div/div[6]/button")).click();
 					takeScreenShot(driver, "SearchResultForClinics", tcID, sheet);
 					break;

@@ -23,6 +23,7 @@ public class HomePage extends BaseTest {
 			.xpath("//app-sub-menu/div[1]/div/div/nav/div/div[2]/ul/li[6]/a[1]/span[contains(text(),'OFFERS')]");
 	By uploadPrescriptionLnk = By.xpath("//app-header/header/div[2]/div/div/nav/div/div[2]/p");
 	By needHelpBtn = By.xpath("//*[@id=\"topBtn\"]/img");
+	By homeServiceRequestLnk = By.xpath("//app-footer/footer/div[2]/div/div/div[1]/div[4]/a/img");
 	By askSalamtekDoctorLnk = By
 			.xpath("//app-footer/footer/div[1]/div/div/div[2]/div/div/span/div/span/div/div[1]/div[3]/a/img");
 	By advancedSearchLnk = By
@@ -40,6 +41,7 @@ public class HomePage extends BaseTest {
 	// Salamtek Has It All elements
 	By salamtekHasItAllLbl = By
 			.xpath("//app-general-home/div[1]/span/section[2]/div/div/div/div/h2[contains(text(),'HAS IT ALL')]");
+	By dealsForTheDayLnk = By.id("DEAL-tab");
 	By pharmacyProductsLnk = By.id("SELLING-tab");
 	By showMeMoreProductsBtn = By.name("store");
 	By productListingHeader = By.xpath(
@@ -134,6 +136,14 @@ public class HomePage extends BaseTest {
 			verifyReviewPopUp();
 			explicitWait(uploadPrescriptionLnk);
 			driver.findElement(uploadPrescriptionLnk).click();
+			break;
+		case "homeServiceRequest":
+			waitSometime();
+			scrollTillASpecificPoint(1000);
+			waitSometime();
+			driver.findElement(needHelpBtn).click();
+			waitSometime();
+			driver.findElement(homeServiceRequestLnk).click();
 			break;
 		}
 		return true;
@@ -241,6 +251,28 @@ public class HomePage extends BaseTest {
 				"Product is not present");
 		return true;
 	}
+	
+	// Purchase product from Home page -> Deals for the day
+		public boolean selectProductFromDealForTheDay(String pageName, String tcID, String sheetName) throws Exception {
+			driver.findElement(homeLnk).click();
+			waitForSpecificTime(5000);
+			WebElement salamtekHasItAllLblEle = driver.findElement(salamtekHasItAllLbl);
+			moveToElement(salamtekHasItAllLblEle);
+			waitSometime();
+			moveToElement(driver.findElement(dealsForTheDayLnk));
+			driver.findElement(dealsForTheDayLnk).click();
+			takeScreenShot(getDriver(), pageName, tcID, sheetName);
+			moveToElement(driver.findElement(showMeMoreProductsBtn));
+			driver.findElement(showMeMoreProductsBtn).click();
+			waitSometime();
+			waitSometime();
+			explicitWait(productListingHeader);
+			System.out.println(
+					"++++++++++++++++     " + driver.findElement(productListingHeader).getText().trim().toUpperCase());
+			Assert.assertEquals(driver.findElement(productListingHeader).getText().trim().toUpperCase(), "PRODUCTS LISTING",
+					"Product is not present");
+			return true;
+		}
 
 	//Book Medical Services from Home page -> Quick Services
 	public boolean selectServicesFromQuickServices(String pageName, String tcID,
@@ -297,6 +329,7 @@ public class HomePage extends BaseTest {
 			throws Exception {
 		driver.findElement(homeLnk).click();
 		waitForSpecificTime(5000);
+		verifyReviewClose();
 		WebElement needMoreHelpHeaderEle = driver.findElement(needMoreHelpHeader);
 		moveToElement(needMoreHelpHeaderEle);
 		waitSometime();

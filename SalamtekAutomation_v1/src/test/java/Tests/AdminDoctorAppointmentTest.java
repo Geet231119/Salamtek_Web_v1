@@ -815,7 +815,7 @@ public class AdminDoctorAppointmentTest extends BaseTest {
 		}
 		takeScreenShot(getDriver(), "BookingDoctorSuccess", testCaseID, sheetName);
 		String bookingID = checkoutPage.getBookingID();
-		String grandTotalAmount = checkoutPage.getDoctorGrandTotalAmount(payOnlyBookingFee);
+		String grandTotalAmount = checkoutPage.getDoctorGrandTotalAmount(payOnlyBookingFee);	
 		String firstWalletValue = myAccountPage.getFirstWalletValue();
 		String expectedRefundAmount = myAccountPage.getExpectedRefundForAdminLabDoctorCancel(grandTotalAmount);
 		String currentHandle = driver.getWindowHandle();

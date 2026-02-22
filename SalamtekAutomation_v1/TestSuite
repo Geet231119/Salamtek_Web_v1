@@ -136,6 +136,7 @@
         	<include name="Admin_OriginalAndDiscountAmount_Lab_MultiService" />
         	<include name="Admin_CreateVoucher" />
         	<include name="Admin_CreatePromotion_Brand" />
+        	<include name="Admin_OrderFromAbandonedCart_Pharmacy" />
         </methods>
      </class>
      <class name="Tests.UploadPrescriptionTest">
@@ -160,6 +161,11 @@
         	<include name="profile" />
         </methods>
      </class>
+      <class name="Tests.HomeServiceRequestTest">
+     	<methods>
+        	<include name="HomeServiceRequest" />
+        </methods>
+    </class>
     </classes>
    </test> <!-- Test -->
 </suite> <!-- Suite -->

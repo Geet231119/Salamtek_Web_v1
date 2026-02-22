@@ -53,8 +53,9 @@ public class ShopOnlineTest extends BaseTest {
 			String pharmacyName, String productName, String productCategory, String colorPresent, String uploadNeeded,
 			String paymentMode, String payOnlyBookingFee, String bankName, String firstName, String lastName,
 			String address, String city, String country, String cardNumber, String cardExpiryMonth,
-			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType, String filterValue, String filterResult) throws Exception {
-		ExtentTestManager.startTest(testCaseID+"_"+description, description);
+			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType,
+			String filterValue, String filterResult) throws Exception {
+		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("grandTotalAmount");
 		excelUtils.updateField("expectedRefundAmount");
@@ -140,8 +141,9 @@ public class ShopOnlineTest extends BaseTest {
 			String pharmacyName, String productName, String productCategory, String colorPresent, String uploadNeeded,
 			String paymentMode, String payOnlyBookingFee, String bankName, String firstName, String lastName,
 			String address, String city, String country, String cardNumber, String cardExpiryMonth,
-			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType, String filterValue, String filterResult) throws Exception {
-		ExtentTestManager.startTest(testCaseID+"_"+description, description);
+			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType,
+			String filterValue, String filterResult) throws Exception {
+		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("grandTotalAmount");
 		excelUtils.updateField("expectedRefundAmount");
@@ -227,8 +229,9 @@ public class ShopOnlineTest extends BaseTest {
 			String pharmacyName, String productName, String productCategory, String colorPresent, String uploadNeeded,
 			String paymentMode, String payOnlyBookingFee, String bankName, String firstName, String lastName,
 			String address, String city, String country, String cardNumber, String cardExpiryMonth,
-			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType, String filterValue, String filterResult) throws Exception {
-		ExtentTestManager.startTest(testCaseID+"_"+description, description);
+			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType,
+			String filterValue, String filterResult) throws Exception {
+		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("grandTotalAmount");
 		excelUtils.updateField("expectedRefundAmount");
@@ -290,7 +293,8 @@ public class ShopOnlineTest extends BaseTest {
 				cardExpiryMonth, cardExpiryYear, cardHolderName, CVV, username);
 		if (testResult.equals(false)) {
 			excelUtils.updateResult(false);
-			excelUtils.updateValueToExcel("ErrorMessage", "Visa Payment Failed. Your order was declined. Please verify your information.");
+			excelUtils.updateValueToExcel("ErrorMessage",
+					"Visa Payment Failed. Your order was declined. Please verify your information.");
 			setUp();
 			assertEquals(testResult, true);
 		}
@@ -321,8 +325,9 @@ public class ShopOnlineTest extends BaseTest {
 			String pharmacyName, String productName, String productCategory, String colorPresent, String uploadNeeded,
 			String paymentMode, String payOnlyBookingFee, String bankName, String firstName, String lastName,
 			String address, String city, String country, String cardNumber, String cardExpiryMonth,
-			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType, String filterValue, String filterResult) throws Exception {
-		ExtentTestManager.startTest(testCaseID+"_"+description, description);
+			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType,
+			String filterValue, String filterResult) throws Exception {
+		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("grandTotalAmount");
 		excelUtils.updateField("expectedRefundAmount");
@@ -414,8 +419,9 @@ public class ShopOnlineTest extends BaseTest {
 			String pharmacyName, String productName, String productCategory, String colorPresent, String uploadNeeded,
 			String paymentMode, String payOnlyBookingFee, String bankName, String firstName, String lastName,
 			String address, String city, String country, String cardNumber, String cardExpiryMonth,
-			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType, String filterValue, String filterResult) throws Exception {
-		ExtentTestManager.startTest(testCaseID+"_"+description, description);
+			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType,
+			String filterValue, String filterResult) throws Exception {
+		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("grandTotalAmount");
 		excelUtils.updateField("expectedRefundAmount");
@@ -477,7 +483,8 @@ public class ShopOnlineTest extends BaseTest {
 				cardExpiryMonth, cardExpiryYear, cardHolderName, CVV, username);
 		if (testResult.equals(false)) {
 			excelUtils.updateResult(false);
-			excelUtils.updateValueToExcel("ErrorMessage", "Visa Payment Failed. Your order was declined. Please verify your information.");
+			excelUtils.updateValueToExcel("ErrorMessage",
+					"Visa Payment Failed. Your order was declined. Please verify your information.");
 			setUp();
 			assertEquals(testResult, true);
 		}
@@ -545,8 +552,9 @@ public class ShopOnlineTest extends BaseTest {
 			String pharmacyName, String productName, String productCategory, String colorPresent, String uploadNeeded,
 			String paymentMode, String payOnlyBookingFee, String bankName, String firstName, String lastName,
 			String address, String city, String country, String cardNumber, String cardExpiryMonth,
-			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType, String filterValue, String filterResult) throws Exception {
-		ExtentTestManager.startTest(testCaseID+"_"+description, description);
+			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType,
+			String filterValue, String filterResult) throws Exception {
+		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("grandTotalAmount");
 		excelUtils.updateField("expectedRefundAmount");
@@ -674,8 +682,9 @@ public class ShopOnlineTest extends BaseTest {
 			String pharmacyName, String productName, String productCategory, String colorPresent, String uploadNeeded,
 			String paymentMode, String payOnlyBookingFee, String bankName, String firstName, String lastName,
 			String address, String city, String country, String cardNumber, String cardExpiryMonth,
-			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType, String filterValue, String filterResult) throws Exception {
-		ExtentTestManager.startTest(testCaseID+"_"+description, description);
+			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType,
+			String filterValue, String filterResult) throws Exception {
+		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("grandTotalAmount");
 		excelUtils.updateField("expectedRefundAmount");
@@ -795,8 +804,9 @@ public class ShopOnlineTest extends BaseTest {
 			String pharmacyName, String productName, String productCategory, String colorPresent, String uploadNeeded,
 			String paymentMode, String payOnlyBookingFee, String bankName, String firstName, String lastName,
 			String address, String city, String country, String cardNumber, String cardExpiryMonth,
-			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType, String filterValue, String filterResult) throws Exception {
-		ExtentTestManager.startTest(testCaseID+"_"+description, description);
+			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType,
+			String filterValue, String filterResult) throws Exception {
+		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("grandTotalAmount");
 		excelUtils.updateField("expectedRefundAmount");
@@ -936,8 +946,9 @@ public class ShopOnlineTest extends BaseTest {
 			String pharmacyName, String productName, String productCategory, String colorPresent, String uploadNeeded,
 			String paymentMode, String payOnlyBookingFee, String bankName, String firstName, String lastName,
 			String address, String city, String country, String cardNumber, String cardExpiryMonth,
-			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType, String filterValue, String filterResult) throws Exception {
-		ExtentTestManager.startTest(testCaseID+"_"+description, description);
+			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType,
+			String filterValue, String filterResult) throws Exception {
+		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("grandTotalAmount");
 		excelUtils.updateField("expectedRefundAmount");
@@ -1007,7 +1018,8 @@ public class ShopOnlineTest extends BaseTest {
 					cardExpiryMonth, cardExpiryYear, cardHolderName, CVV, username);
 			if (testResult.equals(false)) {
 				excelUtils.updateResult(false);
-				excelUtils.updateValueToExcel("ErrorMessage", "Visa Payment Failed. Your order was declined. Please verify your information.");
+				excelUtils.updateValueToExcel("ErrorMessage",
+						"Visa Payment Failed. Your order was declined. Please verify your information.");
 				setUp();
 				assertEquals(testResult, true);
 			}
@@ -1040,8 +1052,9 @@ public class ShopOnlineTest extends BaseTest {
 			String pharmacyName, String productName, String productCategory, String colorPresent, String uploadNeeded,
 			String paymentMode, String payOnlyBookingFee, String bankName, String firstName, String lastName,
 			String address, String city, String country, String cardNumber, String cardExpiryMonth,
-			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType, String filterValue, String filterResult) throws Exception {
-		ExtentTestManager.startTest(testCaseID+"_"+description, description);
+			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType,
+			String filterValue, String filterResult) throws Exception {
+		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("grandTotalAmount");
 		excelUtils.updateField("expectedRefundAmount");
@@ -1065,7 +1078,16 @@ public class ShopOnlineTest extends BaseTest {
 				assertEquals(testResult, true);
 			}
 		} else if (operationName.equalsIgnoreCase("QuickServices")) {
-			testResult = homePage.selectProductFromQuickServices(productCategory,"QuickService", testCaseID, sheetName);
+			testResult = homePage.selectProductFromQuickServices(productCategory, "QuickService", testCaseID,
+					sheetName);
+			if (testResult.equals(false)) {
+				logoutPage.verifyLogout();
+				excelUtils.updateResult(testResult);
+				assertEquals(testResult, true);
+			}
+		}
+		else if (operationName.equalsIgnoreCase("DealsForTheDay")) {
+			testResult = homePage.selectProductFromDealForTheDay("DealsForTheDay", testCaseID, sheetName);
 			if (testResult.equals(false)) {
 				logoutPage.verifyLogout();
 				excelUtils.updateResult(testResult);
@@ -1115,7 +1137,8 @@ public class ShopOnlineTest extends BaseTest {
 					cardExpiryMonth, cardExpiryYear, cardHolderName, CVV, username);
 			if (testResult.equals(false)) {
 				excelUtils.updateResult(false);
-				excelUtils.updateValueToExcel("ErrorMessage", "Visa Payment Failed. Your order was declined. Please verify your information.");
+				excelUtils.updateValueToExcel("ErrorMessage",
+						"Visa Payment Failed. Your order was declined. Please verify your information.");
 				setUp();
 				assertEquals(testResult, true);
 			}
@@ -1148,8 +1171,9 @@ public class ShopOnlineTest extends BaseTest {
 			String pharmacyName, String productName, String productCategory, String colorPresent, String uploadNeeded,
 			String paymentMode, String payOnlyBookingFee, String bankName, String firstName, String lastName,
 			String address, String city, String country, String cardNumber, String cardExpiryMonth,
-			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType, String filterValue, String filterResult) throws Exception {
-		ExtentTestManager.startTest(testCaseID+"_"+description, description);
+			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType,
+			String filterValue, String filterResult) throws Exception {
+		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("grandTotalAmount");
 		excelUtils.updateField("expectedRefundAmount");
@@ -1171,8 +1195,9 @@ public class ShopOnlineTest extends BaseTest {
 			excelUtils.updateResult(testResult);
 			assertEquals(testResult, true);
 		}
-		if(productCategory.equalsIgnoreCase("OFFERSANDPROMOTIONS")) {
-			testResult = shopOnlineMainPage.selectProductFromSalamtekHasItAll(productCategory, productName, testCaseID, sheetName);
+		if (productCategory.equalsIgnoreCase("OFFERSANDPROMOTIONS")) {
+			testResult = shopOnlineMainPage.selectProductFromSalamtekHasItAll(productCategory, productName, testCaseID,
+					sheetName);
 			if (testResult.equals(false)) {
 				logoutPage.verifyLogout();
 				excelUtils.updateResult(testResult);
@@ -1184,8 +1209,7 @@ public class ShopOnlineTest extends BaseTest {
 				excelUtils.updateResult(testResult);
 				assertEquals(testResult, true);
 			}
-		}
-		else {
+		} else {
 			testResult = shopOnlineMainPage.selectProductFromMostViewedCategories(productCategory);
 			if (testResult.equals(false)) {
 				logoutPage.verifyLogout();
@@ -1236,7 +1260,8 @@ public class ShopOnlineTest extends BaseTest {
 					cardExpiryMonth, cardExpiryYear, cardHolderName, CVV, username);
 			if (testResult.equals(false)) {
 				excelUtils.updateResult(false);
-				excelUtils.updateValueToExcel("ErrorMessage", "Visa Payment Failed. Your order was declined. Please verify your information.");
+				excelUtils.updateValueToExcel("ErrorMessage",
+						"Visa Payment Failed. Your order was declined. Please verify your information.");
 				setUp();
 				assertEquals(testResult, true);
 			}
@@ -1269,8 +1294,9 @@ public class ShopOnlineTest extends BaseTest {
 			String pharmacyName, String productName, String productCategory, String colorPresent, String uploadNeeded,
 			String paymentMode, String payOnlyBookingFee, String bankName, String firstName, String lastName,
 			String address, String city, String country, String cardNumber, String cardExpiryMonth,
-			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType, String filterValue, String filterResult) throws Exception {
-		ExtentTestManager.startTest(testCaseID+"_"+description, description);
+			String cardExpiryYear, String cardHolderName, String CVV, String pin, String filterBy, String filterType,
+			String filterValue, String filterResult) throws Exception {
+		ExtentTestManager.startTest(testCaseID + "_" + description, description);
 		excelUtils.transferTCID_SheetName(testCaseID, sheetName);
 		excelUtils.updateField("grandTotalAmount");
 		excelUtils.updateField("expectedRefundAmount");
@@ -1294,14 +1320,16 @@ public class ShopOnlineTest extends BaseTest {
 				assertEquals(testResult, true);
 			}
 		} else if (operationName.equalsIgnoreCase("QuickServices")) {
-			testResult = homePage.selectProductFromQuickServices(productCategory, "QuickService", testCaseID, sheetName);
+			testResult = homePage.selectProductFromQuickServices(productCategory, "QuickService", testCaseID,
+					sheetName);
 			if (testResult.equals(false)) {
 				logoutPage.verifyLogout();
 				excelUtils.updateResult(testResult);
 				assertEquals(testResult, true);
 			}
 		}
-		testResult = shopOnlineMainPage.filterPharmacyEquipmentProducts(filterBy, filterType, filterValue, filterResult, "Filter_"+filterBy+"_"+filterType, testCaseID, sheetName);
+		testResult = shopOnlineMainPage.filterPharmacyEquipmentProducts(filterBy, filterType, filterValue, filterResult,
+				"Filter_" + filterBy + "_" + filterType, testCaseID, sheetName);
 		if (testResult.equals(false)) {
 			logoutPage.verifyLogout();
 			excelUtils.updateResult(testResult);
