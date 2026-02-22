@@ -1,0 +1,16 @@
+[INFO ] 2026-02-18 11:37:23.378 [main] Log - I am in onStart method Test
+[INFO ] 2026-02-18 11:40:14.157 [main] Log - ShopOnline_PurchaseFromDealForTheDay test is failed.
+[INFO ] 2026-02-18 11:40:17.671 [main] Log - I am in onFinish method Test
+[INFO ] 2026-02-18 11:42:50.713 [main] Log - I am in onStart method Test
+[INFO ] 2026-02-18 11:47:14.221 [main] Log - ShopOnline_PurchaseFromDealForTheDay test is succeed.
+[INFO ] 2026-02-18 11:47:18.256 [main] Log - I am in onFinish method Test
+[INFO ] 2026-02-18 11:52:02.403 [main] Log - I am in onStart method Test
+[INFO ] 2026-02-18 11:56:22.757 [main] Log - ShopOnline_PurchaseFromHome test is succeed.
+[INFO ] 2026-02-18 11:56:26.804 [main] Log - I am in onFinish method Test
+[INFO ] 2026-02-18 11:57:17.337 [main] Log - I am in onStart method Test
+[INFO ] 2026-02-18 12:01:36.936 [main] Log - ShopOnline_PurchaseFromHome test is succeed.
+[INFO ] 2026-02-18 12:01:40.769 [main] Log - I am in onFinish method Test
+[INFO ] 2026-02-18 13:45:18.526 [main] Log - I am in onStart method Test
+[INFO ] 2026-02-18 13:49:56.419 [main] Log - I am in onStart method Test
+[INFO ] 2026-02-18 13:52:51.149 [main] Log - Admin_OrderFromAbandonedCart_Pharmacy test is failed.
+[INFO ] 2026-02-18 13:52:52.174 [main] Log - I am in onFinish method Test

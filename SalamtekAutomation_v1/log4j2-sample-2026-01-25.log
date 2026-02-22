@@ -1,0 +1,26 @@
+[INFO ] 2026-01-25 08:54:22.709 [main] Log - I am in onStart method Test
+[INFO ] 2026-01-25 08:59:59.240 [main] Log - AdminOrder_AddItem test is succeed.
+[INFO ] 2026-01-25 09:06:23.710 [main] Log - AdminOrder_Cancel_Promotion test is succeed.
+[INFO ] 2026-01-25 09:11:33.324 [main] Log - AdminOrder_CashReceived test is succeed.
+[INFO ] 2026-01-25 09:16:52.375 [main] Log - AdminOrder_PaymentInfo test is succeed.
+[INFO ] 2026-01-25 09:22:11.452 [main] Log - AdminOrder_OrderSummary test is succeed.
+[INFO ] 2026-01-25 09:22:13.943 [main] Log - I am in onFinish method Test
+[INFO ] 2026-01-25 09:25:33.424 [main] Log - I am in onStart method Test
+[INFO ] 2026-01-25 09:29:41.555 [main] Log - AdminDoctorAppointment_Cancel_VISA test is failed.
+[INFO ] 2026-01-25 09:32:57.120 [main] Log - AdminDoctorAppointment_Cancel_KNET test is failed.
+[INFO ] 2026-01-25 09:39:02.879 [main] Log - AdminDoctorAppointment_REFERRAL_SALAMTEK_To_PHARMACY test is succeed.
+[INFO ] 2026-01-25 09:42:16.753 [main] Log - AdminDoctorAppointment_CashReceived test is succeed.
+[INFO ] 2026-01-25 09:42:19.387 [main] Log - I am in onFinish method Test
+[INFO ] 2026-01-25 09:51:42.341 [main] Log - I am in onStart method Test
+[INFO ] 2026-01-25 10:04:19.030 [main] Log - I am in onStart method Test
+[INFO ] 2026-01-25 10:09:38.660 [main] Log - AdminDoctorAppointment_Cancel_VISA test is succeed.
+[INFO ] 2026-01-25 10:13:46.668 [main] Log - AdminDoctorAppointment_Cancel_KNET test is succeed.
+[INFO ] 2026-01-25 10:13:49.638 [main] Log - I am in onFinish method Test
+[INFO ] 2026-01-25 10:18:16.244 [main] Log - I am in onStart method Test
+[INFO ] 2026-01-25 10:26:32.719 [main] Log - I am in onStart method Test
+[INFO ] 2026-01-25 10:30:43.008 [main] Log - I am in onStart method Test
+[INFO ] 2026-01-25 10:36:16.101 [main] Log - Admin_OrderWithPromotion_Pharmacy test is succeed.
+[INFO ] 2026-01-25 10:41:38.316 [main] Log - I am in onStart method Test
+[INFO ] 2026-01-25 10:44:05.507 [main] Log - I am in onStart method Test
+[INFO ] 2026-01-25 10:49:38.887 [main] Log - Admin_OrderWithPromotion_Pharmacy test is succeed.
+[INFO ] 2026-01-25 10:49:40.686 [main] Log - I am in onFinish method Test
