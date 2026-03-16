@@ -137,6 +137,7 @@
         	<include name="Admin_CreateVoucher" />
         	<include name="Admin_CreatePromotion_Brand" />
         	<include name="Admin_OrderFromAbandonedCart_Pharmacy" />
+        	<include name="Admin_Promo_Cancel_Pharmacy" />
         </methods>
      </class>
      <class name="Tests.UploadPrescriptionTest">
