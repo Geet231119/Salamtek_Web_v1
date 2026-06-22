@@ -116,6 +116,7 @@ public class DoctorListingPage extends BaseTest {
 		} else if (filterType.equalsIgnoreCase("Availability")) {
 			getFilterTypeOptions("//*[@id=\"panelsStayOpen-collapseOne26\"]/div/div/div", filterValue, filterType, tcID,
 					sheetName);
+			waitForSpecificTime(5000);
 		} else if (filterType.equalsIgnoreCase("Time Slot")) {
 			getFilterTypeOptions("//*[@id=\"panelsStayOpen-collapseOne27\"]/div/div/div", filterValue, filterType, tcID,
 					sheetName);

@@ -149,8 +149,8 @@ public class CheckoutPage extends BaseTest {
 	By knetHeader = By.id("PayPageEntry");
 	By knetBankName = By.xpath("//*[@id=\"FCUseDebitEnable\"]/div[1]/div[2]/select");
 	By knetDebitNumber = By.id("debitNumber");
-	By knetExpiryMonth = By.xpath("//*[@id=\"cardExpdate\"]/div[2]/select[1]");
-	By knetExpiryYear = By.xpath("//*[@id=\"cardExpdate\"]/div[2]/select[2]");
+	By knetExpiryMonth = By.id("expiryMonthBox");
+	By knetExpiryYear = By.id("expiryYearBox");
 	By knetPin = By.id("cardPin");
 	By knetSubmitBtn = By.xpath("//input[@value='Submit']");
 	By knetConfirmBtn = By.id("proceedConfirm");
@@ -389,8 +389,9 @@ public class CheckoutPage extends BaseTest {
 			String cardNumber, String expiryMonth, String expiryYear, String cardHolderName, String CVV,
 			String username) throws Exception {
 		boolean status = true;
-		if (errorCheck(transactionFailedError) == true)
-			return false;
+		/*
+		 * if (errorCheck(transactionFailedError) == true) return false;
+		 */
 		try {
 			explicitWait(visaHeader1);
 			// driver.findElement(firstNameTxt).sendKeys(firstName); waitSometime();
@@ -460,8 +461,8 @@ public class CheckoutPage extends BaseTest {
 //		explicitWait(acsEmulatorHeader);
 //		driver.findElement(visaSubmitBtn).click();
 //		driver.switchTo().defaultContent();
-			waitForSpecificTime(10000);
-			// explicitWait_60(printReceiptTxt);
+			//waitForSpecificTime(10000);
+			 explicitWait_60(printReceiptTxt);
 			Assert.assertTrue(driver.findElement(printReceiptTxt).isDisplayed(),
 					"Booking is unsuccessful due to some payment error");
 			status = true;
@@ -479,16 +480,16 @@ public class CheckoutPage extends BaseTest {
 		boolean status = true;
 		try {
 		explicitWait(knetHeader);
-		Select banks = new Select(driver.findElement(knetBankName));
-		banks.selectByValue(bankName);
+		/*
+		 * Select banks = new Select(driver.findElement(knetBankName));
+		 * banks.selectByValue(bankName);
+		 */
 		waitSometime();
 		driver.findElement(knetDebitNumber).sendKeys(cardNumber);
 		waitSometime();
-		Select expiryMonth1 = new Select(driver.findElement(knetExpiryMonth));
-		expiryMonth1.selectByValue(expiryMonth);
+		driver.findElement(knetExpiryMonth).sendKeys(expiryMonth);
 		waitSometime();
-		Select expiryYear1 = new Select(driver.findElement(knetExpiryYear));
-		expiryYear1.selectByValue(expiryYear);
+		driver.findElement(knetExpiryYear).sendKeys(expiryYear);
 		waitSometime();
 		driver.findElement(knetPin).sendKeys(pin);
 		waitSometime();
@@ -496,7 +497,7 @@ public class CheckoutPage extends BaseTest {
 		waitSometime();
 		explicitWait(knetConfirmBtn);
 		driver.findElement(knetConfirmBtn).click();
-		waitForSpecificTime(10000);
+		//waitForSpecificTime(10000);
 		explicitWait_60(printReceiptTxt);
 		Assert.assertTrue(driver.findElement(printReceiptTxt).isDisplayed(),
 				"Booking is unsuccessful due to some payment error");

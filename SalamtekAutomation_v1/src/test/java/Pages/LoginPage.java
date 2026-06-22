@@ -34,7 +34,8 @@ public class LoginPage extends BaseTest{
 	
 	//Validate login functionality
 	public boolean verifyLogin(String strUsername,String strPassword) throws Exception{
-		waitForSpecificTime(5000);
+		//waitForSpecificTime(5000);
+		explicitWait(signinLnk);
 		List<WebElement> targetElement =  driver.findElements(signinLnk);
 		try {
 			System.out.println("Size of elements: "+targetElement.size());
@@ -59,17 +60,15 @@ public class LoginPage extends BaseTest{
 		waitSometime();
 		waitSometime();
 		clickUsingJS(signinLnk);
-		waitSometime();
+		explicitWait(continueWithEmailBtn);
 		driver.findElement(continueWithEmailBtn).click();
-		waitSometime();
 		explicitWait(username);
 		driver.findElement(username).sendKeys(strUsername);
-		waitSometime();
+		explicitWait(loginBtn);
 		driver.findElement(loginBtn).click();
-		waitSometime();
 		explicitWait(password);
 		driver.findElement(password).sendKeys(strPassword);
-		waitSometime();
+		explicitWait(loginBtn);
 		driver.findElement(loginBtn).click();
 		System.out.println("++++++++++++++++     "+driver.findElement(verifyMyAccount).getText());
 		Assert.assertEquals(driver.findElement(verifyMyAccount).getText(),"MY ACCOUNT", "MyAccount is not present");

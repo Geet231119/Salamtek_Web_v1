@@ -34,7 +34,7 @@ public class HomePage extends BaseTest {
 	By tellMeSearchTxtShopOnline = By.xpath("//app-sub-menu/div[2]/div/div/div[1]/div[2]/div/div/input");
 	By searchNameLnk = By.xpath("//*[@id=\"five-block\"]/div[2]/div[2]/div[2]/div/div/ul/li[1]/a");
 	By pharmacyHeader = By.xpath("//div[@class='DOCTER-PROFILE-NAME']/h2");
-	By chooseServiceThatFitsYouLbl = By.xpath("//app-doctor-details/section[1]/div[2]/div/div[1]/div/div[1]/p[contains(text(),'Choose the Service that fits you')]");
+	By chooseServiceThatFitsYouLbl = By.xpath("//p[contains(text(),'Choose the Service that fits you')]");
 	By bookAnAppointmentBtn = By.xpath("//button[contains(text(),'BOOK AN APPOINTMENT')]");
 	By profileServiceLnk = By.id("profileTestTab");
 

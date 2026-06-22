@@ -20,10 +20,9 @@ public class LogoutPage extends BaseTest{
 	
 	//Validate logout functionality
 	public boolean verifyLogout() throws Exception{
-		waitSometime();
 		waitElementToBeClickable(myAccountLnk);
 		clickUsingJS(myAccountLnk);
-		waitForSpecificTime(7000);
+		//waitForSpecificTime(7000);
 		explicitWait_60(dashboardBtn);
 		explicitWait(signOutBtn);
 		moveToElement(driver.findElement(signOutBtn));

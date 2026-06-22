@@ -1,3 +1,6 @@
-[INFO ] 2026-02-22 13:29:28.999 [main] Log - I am in onStart method Test
-[INFO ] 2026-02-22 13:36:19.907 [main] Log - Admin_Promo_Cancel_Pharmacy test is succeed.
-[INFO ] 2026-02-22 13:36:21.148 [main] Log - I am in onFinish method Test
+[INFO ] 2026-06-22 12:19:51.032 [main] Log - I am in onStart method Test
+[INFO ] 2026-06-22 12:20:34.082 [main] Log - BookingAppointment_KNET test is failed.
+[INFO ] 2026-06-22 12:20:42.477 [main] Log - I am in onFinish method Test
+[INFO ] 2026-06-22 12:21:26.325 [main] Log - I am in onStart method Test
+[INFO ] 2026-06-22 12:24:10.780 [main] Log - BookingAppointment_KNET test is succeed.
+[INFO ] 2026-06-22 12:24:18.455 [main] Log - I am in onFinish method Test
